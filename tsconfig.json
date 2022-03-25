@@ -33,7 +33,7 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
-  ],
+, "src/main.js", "src/router/index.js", "src/plugins/MockLocationsPlugin.js"  ],
   "exclude": [
     "node_modules"
   ]

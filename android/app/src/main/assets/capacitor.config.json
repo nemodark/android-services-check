@@ -1,0 +1,6 @@
+{
+	"appId": "com.richard.app",
+	"appName": "vue-first-app",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
