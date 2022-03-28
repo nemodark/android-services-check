@@ -29,9 +29,9 @@ public class MockLocationsPlugin extends Plugin {
         if (action.equals("check")) {
             isMock = location.isFromMockProvider();
 
-            result.put("is_mock", isMock);
+            // result.put("is_mock", isMock);
 
-            call.resolve(result);
+            call.resolve(isMock);
         }
     }
 }

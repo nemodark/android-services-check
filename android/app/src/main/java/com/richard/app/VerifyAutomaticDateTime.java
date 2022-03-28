@@ -20,6 +20,8 @@ public class VerifyAutomaticDateTime extends Plugin{
 
         JSObject result = new JSObject();
 
+        boolean isAutomatic = false;
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             dateTime = Settings.Global.getInt(getContext().getContentResolver(), Settings.Global.AUTO_TIME, 0);
             timezone = Settings.Global.getInt(getContext().getContentResolver(), Settings.Global.AUTO_TIME_ZONE, 0);
@@ -39,11 +41,13 @@ public class VerifyAutomaticDateTime extends Plugin{
 
         if (dateTime == 0 || timezone == 0) {
             result.put("is_enabled", false);
+            isAutomatic = false;
         } else {
             result.put("is_enabled", true);
+            isAutomatic = true
         }
 
-        call.resolve(result);
+        call.resolve(isAutomatic);
     }
 
 
