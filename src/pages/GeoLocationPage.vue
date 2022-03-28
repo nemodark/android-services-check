@@ -108,7 +108,7 @@ export default {
         action: 'check'
       });
 
-      this.isMock = isMock.is_mock
+      this.isMock = isMock
     },
   },
 }

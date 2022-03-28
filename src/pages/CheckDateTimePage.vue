@@ -37,7 +37,7 @@ export default {
       if (Capacitor.isNativePlatform) {
       const isAutomatic = await VerifyDateTimePlugin.isAutomaticChecked();
 
-      this.isAutomatic = isAutomatic.is_enabled
+      this.isAutomatic = isAutomatic
       } else {
         await Toast.show({
           text: 'This feature only works on android or ios'
